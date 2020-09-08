@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contactos</title>
+	<meta charset="ISO-8859-1">
+	<style>
+		header{background-color: pink; border: 2px solid purple}
+		nav{border: 4px dashed pink}
+		input{background-color: #F9DCD1}
+		body{font-family: 'Fondamento', cursive;}
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+	<h1>Contactos</h1>
+</header>
+
+<nav>
+		<a href="index.html">Ir a HOME</a>
+	</nav>
+
+<main>
+	
+</main>
+
+<form action="mail.php" method="get">
+	
+	<label>Nombre :
+	<input type="text" name="nombre" placeholder="Ingrese su nombre" required><br>
+</label>
+
+<label>Apellido :
+	<input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+</label><br>
+
+<label>Contrasenia: <br> <input type="password" name="pass" style="width: 180px" maxlength="6"> <br><br>
+	
+</label>
+
+<label>Edad :
+	<input type="number" name="Edad" placeholder="Ingrese su edad" step="3" min="18" required>
+</label><br><br>
+
+<label>Dia:
+	<input type="date" name="fecha">
+</label><br><br>
+
+<label>Email :
+	<input type="email" name="Email" placeholder="Ingrese su Email" required>
+</label>
+
+<label>Pais :
+	<select name="Pais">
+		<option value="1">Peru</option>
+		<option value="2">Italia</option>
+		<option value="3">Argentina</option>
+	</select>
+</label><br><br>
+
+<label>Sexo :
+	Hombre<input type="radio" name="sexo" value="H">
+	Mujer<input type="radio" name="sexo" value="M">
+	Otro<input type="radio" name="sexo" value="O">
+</label><br><br>
+
+<label>Comentarios
+	<textarea maxlength="280" cols="30" rows="5">
+		Ingrese aqui su texto
+	</textarea>
+</label><br><br>
+
+<label>Terminos y condiciones
+	<input type="checkbox" name="Terminos" checked>
+</label>
+
+<input type="submit" name="boton" value="ENVIAR">
+</form>
+
+<footer>
+	
+</footer>
+
+</body>
+</html>
